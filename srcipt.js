@@ -101,3 +101,7 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
+=======
+hi there this
+hi bro
+>>>>>>> 84b7f67fed343e79412d5beca073ea114e5bf55f
