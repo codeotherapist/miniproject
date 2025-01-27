@@ -59,33 +59,68 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.687034842547!2d-1.2570928235655132!3d51.75704619243552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6a9ef8c485b%3A0xd2ff1883a001afed!2sUniversity%20of%20Oxford!5e0!3m2!1sen!2sin!4v1736064461936!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
-
     <section id="form-details">
-        <form action="">
+        <!-- Contact Form -->
+        <form action="https://api.web3forms.com/submit" method="POST">
             <span>LEAVE A MESSAGE</span>
             <h2>We love to hear from you</h2>
-            <input type="text" placeholder="Your Name">
-            <input type="text" placeholder="E-mail">
-            <input type="text" placeholder="Subject">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <button class="normal">Submit</button>
+            <input type="hidden" name="access_key" value="89ed4cd4-98bf-48ff-8ab1-a94b67869a5c">
+            
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
+            
+            <label for="subject"></label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            
+            <label for="message"></label>
+            <textarea id="message" name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            
+            <button class="normal" type="submit">Submit</button>
         </form>
-
+    
+        <!-- Contact Details -->
         <div class="people">
-            <div>
-                <img src="people/1.png">
-                <p><span>John Doe </span>Senior Marketing Manager <br>Phone: +000 123 000 77 88 <br>Email: contact@example.com</p>
+            <div class="person">
+                <figure>
+                    <img src="people/1.png" alt="John Doe's Photo">
+                    <figcaption>John Doe</figcaption>
+                </figure>
+                <address>
+                    <p><strong>John Doe</strong><br>Senior Marketing Manager</p>
+                    <p>Phone: <a href="tel:+0001230007788">+000 123 000 77 88</a></p>
+                    <p>Email: <a href="mailto:contact@example.com">contact@example.com</a></p>
+                </address>
             </div>
-            <div>
-                <img src="people/2.png">
-                <p><span>William Smith </span>Senior Marketing Manager <br>Phone: +000 123 000 77 88 <br>Email: contact@example.com</p>
+            
+            <div class="person">
+                <figure>
+                    <img src="people/2.png" alt="William Smith's Photo">
+                    <figcaption>William Smith</figcaption>
+                </figure>
+                <address>
+                    <p><strong>William Smith</strong><br>Senior Marketing Manager</p>
+                    <p>Phone: <a href="tel:+0001230007788">+000 123 000 77 88</a></p>
+                    <p>Email: <a href="mailto:contact@example.com">contact@example.com</a></p>
+                </address>
             </div>
-            <div>
-                <img src="people/3.png">
-                <p><span>Emma Stone </span>Senior Marketing Manager <br>Phone: +000 123 000 77 88 <br>Email: contact@example.com</p>
+            
+            <div class="person">
+                <figure>
+                    <img src="people/3.png" alt="Emma Stone's Photo">
+                    <figcaption>Emma Stone</figcaption>
+                </figure>
+                <address>
+                    <p><strong>Emma Stone</strong><br>Senior Marketing Manager</p>
+                    <p>Phone: <a href="tel:+0001230007788">+000 123 000 77 88</a></p>
+                    <p>Email: <a href="mailto:contact@example.com">contact@example.com</a></p>
+                </address>
             </div>
         </div>
     </section>
+    
 
     <section id="newsletter" class="section-p1 section-m1">
         <div class="newstext">
@@ -93,8 +128,10 @@
             <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
         </div>
         <div class="form">
-            <input type="text" placeholder="Your email address">
-            <button class="normal">Sign Up</button>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="89ed4cd4-98bf-48ff-8ab1-a94b67869a5c">
+                <input type="email" name="email" placeholder="Your email address" required>
+                <button type="submit" class="normal">Sign Up</button>
         </div>
     </section>
 

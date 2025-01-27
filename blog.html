@@ -101,8 +101,10 @@
             <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
         </div>
         <div class="form">
-            <input type="text" placeholder="Your email address">
-            <button class="normal">Sign Up</button>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="89ed4cd4-98bf-48ff-8ab1-a94b67869a5c">
+                <input type="email" name="email" placeholder="Your email address" required>
+                <button type="submit" class="normal">Sign Up</button>
         </div>
     </section>
 
